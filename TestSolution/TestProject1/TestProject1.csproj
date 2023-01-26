@@ -19,6 +19,18 @@
       <None Update="TestDataFiles\SNC_AOD_01102023_061442.xml">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
+      <None Remove="Test\**" />
+      <None Update="ZipFiles\SNC_AOD_01102023_061442.xml.zip">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Test\**" />
     </ItemGroup>
 
 </Project>
